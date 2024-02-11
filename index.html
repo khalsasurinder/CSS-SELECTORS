@@ -18,8 +18,8 @@
                     width:200px;
                     height: 200px;
                     background-color: red; 
-
                 }
+
                 /*
                     2 ID Selector Syntax
                     element#id{
@@ -29,17 +29,85 @@
                  span#a1{
                     display:block;
                     width: 200px;
-                    hight;400px;
+                    hight;200px;
                     background:green;
                  }
+                 /*
+                  3. Class Selector Syntax
 
+                  element.id{
+                    property:value;
+                  }
+                  */
+                  span.b1{
+                    display: block;
+                    width:200px;
+                    height: 200px;
+                    background-color: purple;
+ 
+                  }
+                  /*
+                    4. Attribute Selector Syntax
+
+                  element[name="value"]{
+                    property:value;
+                  }
+                  */
+                  a[href="https://google.in"]{
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    background: lavender;
+                  }
+                  /*
+                    5. Universal Selector
+
+                    *{
+                        property:value;
                     }
+                    */
+                    *{
+                      border: 10px solid #000; 
+                    }
+                    /*
+                        6. Group/Combinational
+                        element1,element2,.....{
+                            property:value;
+                        }
+                        */
+                        div,span#a1,span.b1,a[href="https://google.in"]{
+                            display: inline-block;
+                        }
+                        /*
+                            7. Pesudo Element Selector::
+                                element::selector{
+                                    property:value;
+                                }
+                                */
+                                h1::before{
+                                 content: url(https://th.bing.com/th/id/R.1788cb693f3a64604449c29cc5a80610?rik=ehKlcOf8qHW%2blw&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2f4Tb%2f6Xy%2f4Tb6XyxLc.gif&ehk=elMkpuV1PrSTlXyVov7yd4uxo2Yq2wZ8YDdhQMSWZuk%3d&risl=&pid=ImgRaw&r=0);
+                                }
+                             /*
+                                8. Pesudo Element Selector:
+                                element:selector{
+                                    property:value;
+                                }
+                                */
+                                div#c1:hover{
+                                    background-color: blue;
+                                }
+
             </style>
   
         </head> 
     <body>
         <div>CSS Element Selector</div>
         <span id="a1">CSS ID Selector. #</span>
+        <span class="b1">CSS Class Selector</span>
+        <a href="https://google.in">css Attribute</a>
+        <h1>Pesudo Element Selector</h1>
+        <div id="c1">Pesudo class Element Selector</div>
+
     </body>
 </html>
   
